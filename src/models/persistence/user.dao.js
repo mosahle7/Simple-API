@@ -10,7 +10,7 @@ const getAll = () => {
 }
 
 /**
- * Update a user from its ID 
+ * Update a user from its ID f
  * 
  * @param {integer} userId 
  * @param {Object} newDetails 
