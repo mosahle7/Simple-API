@@ -4,8 +4,8 @@ import pino from "pino";
 
 const logger = pino();
 const STATUS = {
-    success: 'OK',
-    failure: 'NO'
+    success: true,
+    failure: false
 };
 
 /**
@@ -40,13 +40,8 @@ export const getUser = (req,res) => {
     const user = userService.getUser(id);
 
     if(user){
-        logger.info(`Getting user ${id}`)
-        return res.status(StatusCodes.OK).send(
-            {
-                status: STATUS.success,
-                user ,
-            }
-        )
+        logger.info(`Getting user ${id}`);
+        return res.status(StatusCodes.OK).send(user)
     }
     return res.status(StatusCodes.NOT_FOUND).send(
         {

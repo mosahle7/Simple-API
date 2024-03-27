@@ -9,9 +9,9 @@ const minlen = {
 
 const maxlen = {
   name: 30,
-  city: 20,
+  city: 50,
   country: 20,
-  email: 20
+  email: 30
 }
 
 export const getUserSchema = {

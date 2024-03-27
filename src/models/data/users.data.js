@@ -11,7 +11,7 @@ const users = [
     {
         id: 2,
         name: "Mohameaqsd Sahle Thappi",
-        email: 'sahlethappi@gmail.com',
+        email: 'mohamed_b210181ee@nitc.ac.in',
         password: '********',
     }
 ];
